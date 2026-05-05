@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)file:///C:/Users/Giacomo/Downloads/feltro-landing-v2_3.html -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>+1.900 Moldes de Feltro Prontos — Método Cópia &amp; Venda</title>
+<link href="./feltro_files/css2" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #EBEBEB;
+  --bg2: #E2E2E2;
+  --white: #FFFFFF;
+  --dark: #111111;
+  --muted: #666666;
+  --muted2: #888888;
+  --green: #3DAA6A;
+  --green-dark: #2E8A55;
+  --green-light: #EAF6EF;
+  --green-mid: #C8EAD8;
+  --red-strike: #E03030;
+  --radius: 18px;
+  --radius-sm: 12px;
+  --font: 'Sora', system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ── UTILS ─────────────────────────────────── */
+.container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+.btn-green {
+  display: inline-block;
+  background: var(--green);
+  color: #fff;
+  font-family: var(--font);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 18px 36px;
+  border-radius: 60px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.18s, transform 0.15s;
+}
+.btn-green:hover { background: var(--green-dark); transform: translateY(-1px); }
+
+.tag-pill {
+  display: inline-block;
+  background: var(--white);
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 7px 18px;
+  border-radius: 30px;
+}
+
+/* ── TOPBAR ─────────────────────────────────── */
+.topbar {
+  background: var(--dark);
+  color: #fff;
+  text-align: center;
+  padding: 12px 20px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  position: sticky; top: 0; z-index: 100;
+}
+.topbar strong { color: #6EE09A; }
+
+/* ── HERO ─────────────────────────────────── */
+.hero {
+  background: var(--bg);
+  padding: 64px 24px 72px;
+}
+.hero-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+.hero-left {}
+.hero-logo {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero-logo span {
+  display: inline-block;
+  width: 32px; height: 32px;
+  background: var(--green);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-size: 16px;
+}
+.hero h1 {
+  font-size: clamp(28px, 3.6vw, 44px);
+  font-weight: 800;
+  line-height: 1.13;
+  color: var(--dark);
+  margin-bottom: 20px;
+}
+.hero h1 em {
+  font-style: normal;
+  background: var(--green);
+  color: #fff;
+  padding: 2px 10px;
+  border-radius: 8px;
+}
+.hero-sub {
+  font-size: 16px;
+  color: var(--muted);
+  font-weight: 400;
+  margin-bottom: 32px;
+  line-height: 1.65;
+}
+.hero-objections {
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  padding: 20px 24px;
+  margin-bottom: 32px;
+}
+.hero-objections p {
+  font-size: 14px;
+  color: var(--muted2);
+  padding: 5px 0 5px 26px;
+  position: relative;
+}
+.hero-objections p::before {
+  content: '✕';
+  position: absolute; left: 0;
+  color: #E03030;
+  font-weight: 700;
+  font-size: 13px;
+}
+.hero-objections .solution {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid #EBEBEB;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--dark);
+  padding-left: 0;
+}
+.hero-objections .solution::before { display: none; }
+
+.hero-right {
+  display: flex;
+  justify-content: center;
+}
+.hero-mockup {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 28px;
+  width: 100%;
+  max-width: 360px;
+  position: relative;
+}
+.hero-mockup-badge {
+  background: var(--green-light);
+  color: var(--green);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 30px;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.hero-mockup h3 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+.mockup-items { display: flex; flex-direction: column; gap: 10px; }
+.mockup-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--bg);
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+.mockup-icon {
+  width: 36px; height: 36px;
+  background: var(--white);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+.mockup-item span {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--dark);
+}
+.mockup-price-tag {
+  margin-top: 20px;
+  background: var(--dark);
+  color: #fff;
+  border-radius: 12px;
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mockup-price-tag .label { font-size: 12px; color: #aaa; }
+.mockup-price-tag .price { font-size: 22px; font-weight: 800; }
+.mockup-price-tag .old { font-size: 13px; color: #888; text-decoration: line-through; }
+
+/* ── SECTION BASE ─────────────────────────────── */
+.section { padding: 72px 24px; }
+.section-center { text-align: center; }
+.section-eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 10px;
+  display: block;
+}
+.section-title {
+  font-size: clamp(24px, 3vw, 38px);
+  font-weight: 800;
+  line-height: 1.18;
+  color: var(--dark);
+  margin-bottom: 14px;
+}
+.section-title strong { color: var(--green); font-weight: 800; }
+.section-desc {
+  font-size: 16px;
+  color: var(--muted);
+  max-width: 560px;
+  margin: 0 auto 48px;
+}
+
+/* ── COMO FUNCIONA ─────────────────────────────── */
+.steps-section { background: var(--bg); }
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 12px;
+}
+.step-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 32px 28px;
+  position: relative;
+  overflow: hidden;
+}
+.step-num {
+  font-size: 72px;
+  font-weight: 800;
+  color: #E8E8E8;
+  line-height: 1;
+  position: absolute;
+  top: 12px; right: 16px;
+}
+.step-icon { font-size: 36px; margin-bottom: 16px; }
+.step-card h3 { font-size: 17px; font-weight: 700; margin-bottom: 8px; }
+.step-card p { font-size: 14px; color: var(--muted); line-height: 1.6; }
+
+/* ── O QUE VOCÊ RECEBE ─────────────────────────────── */
+.receive-section { background: var(--bg2); }
+.receive-main {
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.receive-header {
+  background: var(--dark);
+  padding: 36px 40px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+  align-items: center;
+}
+.receive-header h3 {
+  font-size: 22px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.25;
+}
+.receive-header p { font-size: 14px; color: #999; margin-top: 6px; }
+.receive-count {
+  background: var(--green);
+  color: #fff;
+  font-size: 32px;
+  font-weight: 800;
+  width: 100px; height: 100px;
+  border-radius: 50%;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  flex-shrink: 0;
+  line-height: 1.1;
+}
+.receive-count small { font-size: 11px; font-weight: 600; opacity: 0.85; }
+.receive-cats {
+  padding: 32px 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.cat-item {
+  display: flex; align-items: center; gap: 12px;
+  background: var(--bg);
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+.cat-dot {
+  width: 36px; height: 36px;
+  background: var(--green-light);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px; flex-shrink: 0;
+}
+.cat-item span { font-size: 14px; font-weight: 600; }
+
+/* ── PARA QUEM É ─────────────────────────────── */
+.forquem-section { background: var(--bg); }
+.forquem-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.forquem-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 28px 28px 28px 24px;
+  display: flex; align-items: flex-start; gap: 18px;
+}
+.forquem-icon-wrap {
+  width: 48px; height: 48px;
+  background: var(--bg);
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px; flex-shrink: 0;
+}
+.forquem-card h4 { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+.forquem-card p { font-size: 13px; color: var(--muted); line-height: 1.6; }
+
+/* ── BÔNUS ─────────────────────────────── */
+.bonus-section { background: var(--dark); }
+.bonus-section .section-eyebrow { color: #6EE09A; }
+.bonus-section .section-title { color: #fff; }
+.bonus-section .section-desc { color: #888; }
+.bonus-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.bonus-card {
+  background: #1C1C1C;
+  border-radius: var(--radius);
+  padding: 28px 28px;
+  border: 1px solid #2A2A2A;
+}
+.bonus-tag {
+  background: var(--green);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 30px;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.bonus-card h4 { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+.bonus-card p { font-size: 14px; color: #777; line-height: 1.6; }
+
+/* ── DEPOIMENTOS ─────────────────────────────── */
+.depo-section { background: var(--bg2); }
+.depo-intro {
+  max-width: 960px;
+  margin: 0 auto 36px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 24px;
+  align-items: center;
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 32px 40px;
+}
+.depo-intro-num {
+  font-size: 56px;
+  font-weight: 800;
+  color: var(--green);
+  line-height: 1;
+}
+.depo-intro h3 { font-size: 20px; font-weight: 700; margin-bottom: 4px; }
+.depo-intro p { font-size: 15px; color: var(--muted); }
+.depo-grid {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.depo-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 28px;
+}
+.depo-stars { color: #F5A623; font-size: 15px; margin-bottom: 12px; letter-spacing: 2px; }
+.depo-card p {
+  font-size: 14px;
+  color: var(--dark);
+  font-style: italic;
+  line-height: 1.65;
+  margin-bottom: 20px;
+}
+.depo-author { display: flex; align-items: center; gap: 12px; }
+.depo-avatar {
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 14px; color: #fff; flex-shrink: 0;
+}
+.depo-name { font-size: 13px; font-weight: 700; }
+.depo-loc { font-size: 12px; color: var(--muted2); }
+
+/* ── STACK DE VALOR ─────────────────────────────── */
+.stack-section { background: var(--bg); }
+.stack-box {
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  max-width: 700px;
+  margin: 0 auto 32px;
+}
+.stack-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 32px;
+  border-bottom: 1px solid #F0F0F0;
+  font-size: 15px;
+}
+.stack-row:last-child { border-bottom: none; }
+.stack-row .name { font-weight: 500; color: var(--dark); display: flex; align-items: center; gap: 10px; }
+.stack-row .name span { font-size: 18px; }
+.stack-row .val { font-weight: 700; color: var(--muted2); font-size: 14px; }
+.stack-total {
+  background: var(--dark);
+  border-radius: var(--radius);
+  padding: 28px 40px;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.stack-total-left p { font-size: 14px; color: #888; margin-bottom: 4px; }
+.stack-total-left .strike {
+  font-size: 28px;
+  font-weight: 800;
+  color: #fff;
+  text-decoration: line-through;
+  text-decoration-color: var(--red-strike);
+  opacity: 0.5;
+}
+.stack-total-right { text-align: right; }
+.stack-total-right p { font-size: 13px; color: #888; margin-bottom: 2px; }
+.stack-total-right .real-price {
+  font-size: 42px;
+  font-weight: 800;
+  color: var(--green);
+  line-height: 1.1;
+}
+
+/* ── PREÇO ─────────────────────────────── */
+.price-section { background: var(--bg2); }
+.price-card {
+  max-width: 480px;
+  margin: 0 auto;
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.price-card-top {
+  background: var(--dark);
+  padding: 36px 40px;
+  text-align: center;
+}
+.price-card-top h3 {
+  font-size: 15px;
+  color: #aaa;
+  font-weight: 500;
+  margin-bottom: 12px;
+  letter-spacing: 0.04em;
+}
+.price-from {
+  font-size: 16px;
+  color: #666;
+  text-decoration: line-through;
+  text-decoration-color: var(--red-strike);
+  margin-bottom: 4px;
+}
+.price-main {
+  display: flex; align-items: baseline;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+.price-rs { font-size: 24px; font-weight: 700; color: var(--green); margin-top: 8px; }
+.price-num { font-size: 80px; font-weight: 800; color: var(--green); line-height: 1; }
+.price-economy {
+  background: var(--green);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 20px;
+  border-radius: 30px;
+  display: inline-block;
+}
+.price-card-body { padding: 32px 40px; }
+.price-includes {
+  display: flex; flex-direction: column; gap: 10px;
+  margin-bottom: 28px;
+}
+.pi-row {
+  display: flex; align-items: center; gap: 12px;
+  font-size: 14px; font-weight: 500;
+}
+.pi-check {
+  width: 22px; height: 22px;
+  background: var(--green-light);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--green);
+  font-size: 12px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.urgency-row {
+  background: #FFF8E6;
+  border-radius: 10px;
+  padding: 14px 18px;
+  display: flex; align-items: center; gap: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #8A6000;
+  margin-bottom: 24px;
+}
+.urgency-dot {
+  width: 10px; height: 10px;
+  background: #F5A623;
+  border-radius: 50%;
+  flex-shrink: 0;
+  animation: blink 1.2s infinite;
+}
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.2} }
+.price-trust {
+  text-align: center;
+  font-size: 12px;
+  color: var(--muted2);
+  margin-top: 16px;
+}
+
+/* ── GARANTIA ─────────────────────────────── */
+.garantia-section { background: var(--bg); }
+.garantia-box {
+  max-width: 700px;
+  margin: 0 auto;
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 44px 48px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 36px;
+  align-items: center;
+}
+.garantia-badge {
+  font-size: 72px;
+  line-height: 1;
+}
+.garantia-box h3 {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--dark);
+  margin-bottom: 12px;
+}
+.garantia-box p {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* ── FAQ ─────────────────────────────── */
+.faq-section { background: var(--bg2); }
+.faq-list { max-width: 700px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+.faq-item { background: var(--white); border-radius: var(--radius-sm); overflow: hidden; }
+.faq-q {
+  width: 100%;
+  background: none; border: none;
+  padding: 20px 28px;
+  text-align: left;
+  font-family: var(--font);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--dark);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.faq-arrow {
+  width: 28px; height: 28px;
+  background: var(--bg);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px;
+  color: var(--dark);
+  flex-shrink: 0;
+  transition: transform 0.22s, background 0.15s;
+}
+.faq-q.active .faq-arrow { transform: rotate(45deg); background: var(--green); color: #fff; }
+.faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  font-size: 14px; color: var(--muted);
+  padding: 0 28px; line-height: 1.7;
+}
+.faq-a.open { max-height: 300px; padding-bottom: 24px; }
+
+/* ── FOOTER CTA ─────────────────────────────── */
+.footer-cta {
+  background: var(--dark);
+  padding: 80px 24px;
+  text-align: center;
+}
+.footer-cta h2 {
+  font-size: clamp(26px, 3.5vw, 42px);
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+.footer-cta p { font-size: 16px; color: #888; margin-bottom: 36px; }
+.footer-trust {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #555;
+  display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap;
+}
+
+/* ── RODAPÉ ─────────────────────────────── */
+.rodape {
+  background: #0A0A0A;
+  padding: 32px 24px;
+}
+.rodape-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.rodape-brand .logo-text {
+  font-size: 16px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 6px;
+}
+.rodape-brand p { font-size: 12px; color: #555; }
+.rodape-contact { text-align: right; }
+.rodape-contact p { font-size: 13px; color: #666; margin-bottom: 8px; }
+.rodape-contact a {
+  background: var(--green);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 10px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* ── RESPONSIVE ─────────────────────────────── */
+@media (max-width: 768px) {
+  .hero-inner { grid-template-columns: 1fr; gap: 36px; }
+  .hero-right { display: none; }
+  .steps-grid { grid-template-columns: 1fr; }
+  .receive-cats { grid-template-columns: 1fr 1fr; }
+  .forquem-grid { grid-template-columns: 1fr; }
+  .bonus-grid { grid-template-columns: 1fr; }
+  .depo-grid { grid-template-columns: 1fr; }
+  .depo-intro { grid-template-columns: 1fr; gap: 12px; text-align: center; }
+  .receive-header { grid-template-columns: 1fr; }
+  .receive-count { width: 80px; height: 80px; font-size: 24px; }
+  .garantia-box { grid-template-columns: 1fr; text-align: center; padding: 32px 28px; }
+  .stack-total { flex-direction: column; text-align: center; }
+  .stack-total-right { text-align: center; }
+  .receive-header, .receive-cats { padding: 24px 20px; }
+  .price-card-top, .price-card-body { padding: 28px 24px; }
+  .rodape-inner { flex-direction: column; }
+  .rodape-contact { text-align: left; }
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  ⚡ Último lote: preço promocional — <strong>pode subir sem aviso</strong>
+</div>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-logo">
+        <span>🧵</span>
+        Método Cópia &amp; Venda em Feltro™
+      </div>
+
+      <h1>Como pessoas comuns estão fazendo <em>renda extra com feltro</em> copiando moldes prontos — mesmo sem saber criar nada</h1>
+
+      <div style="margin: 24px 0;">
+        <img src="./feltro_files/ChatGPT Image 5 de mai. de 2026, 14_56_11 (1).png" alt="Renda extra com feltro" style="width: 100%; border-radius: 16px; display: block;">
+      </div>
+
+      <p class="hero-sub">Copie os moldes prontos e transforme feltro em dinheiro — sem precisar criar nada do zero.</p>
+
+      <div class="hero-objections">
+        <p>Não precisa ser criativa</p>
+        <p>Não precisa saber desenhar</p>
+        <p>Não precisa ter experiência com artesanato</p>
+        <div class="solution">👉 Você só precisa copiar o modelo certo.</div>
+      </div>
+
+      <a href="file:///C:/Users/Giacomo/Downloads/feltro-landing-v2_3.html#preco" class="btn-green" style="width: 100%; text-align: center; display: block; padding: 20px;">
+        QUERO ACESSAR OS MOLDES POR R$16 🔓
+      </a>
+      <p style="font-size: 12px; color: var(--muted2); text-align: center; margin-top: 12px;">🔒 Pagamento seguro &nbsp;·&nbsp; ✅ Garantia 90 dias &nbsp;·&nbsp; ⚡ Acesso imediato</p>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-mockup">
+        <div class="hero-mockup-badge">+1.900 moldes prontos</div>
+        <h3>No Método Cópia &amp; Venda você vai ter:</h3>
+        <div class="mockup-items">
+          <div class="mockup-item">
+            <div class="mockup-icon">📁</div>
+            <span>Biblioteca completa de moldes</span>
+          </div>
+          <div class="mockup-item">
+            <div class="mockup-icon">🎯</div>
+            <span>Moldes que já têm demanda</span>
+          </div>
+          <div class="mockup-item">
+            <div class="mockup-icon">📅</div>
+            <span>Datas comemorativas + nichos</span>
+          </div>
+          <div class="mockup-item">
+            <div class="mockup-icon">🎁</div>
+            <span>4 bônus inclusos</span>
+          </div>
+          <div class="mockup-item">
+            <div class="mockup-icon">👥</div>
+            <span>Grupo exclusivo de suporte</span>
+          </div>
+        </div>
+        <div class="mockup-price-tag">
+          <div>
+            <div class="label">Acesso vitalício por</div>
+            <div class="price">R$ 16</div>
+          </div>
+          <div class="old">De R$97</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ COMO FUNCIONA ══ -->
+<section class="section steps-section">
+  <div class="container section-center">
+    <span class="section-eyebrow">Como funciona</span>
+    <h2 class="section-title">3 passos simples para <strong>começar a vender</strong></h2>
+    <p class="section-desc">Não precisa inventar nada. O caminho já está pronto para você seguir.</p>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <div class="step-icon">🎯</div>
+        <h3>Escolha o molde</h3>
+        <p>Acesse os +1.900 moldes organizados por categoria e escolha os que têm mais saída no mercado.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <div class="step-icon">✂️</div>
+        <h3>Replique passo a passo</h3>
+        <p>Siga o molde com instruções claras. Sem estresse, sem erro. Qualquer pessoa consegue — inclusive você.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <div class="step-icon">💰</div>
+        <h3>Transforme em renda</h3>
+        <p>Venda no WhatsApp, Instagram, feiras e encomendas. Sem precisar criar nada do zero.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ DEPOIMENTOS 1 ══ -->
+<section class="section depo-section" style="background: var(--bg2);">
+  <div class="container">
+    <div class="depo-intro">
+      <div class="depo-intro-num">3+</div>
+      <div>
+        <h3>Quem já aplicou o Método Cópia &amp; Venda teve esse resultado</h3>
+        <p>Pessoas comuns que começaram do zero e já estão vendendo com feltro.</p>
+      </div>
+    </div>
+    <div class="depo-grid">
+      <div class="depo-card">
+        <div class="depo-stars">★★★★★</div>
+        <p>"Nunca tinha feito artesanato na vida. Com os moldes eu comecei a fazer peças em duas semanas e já vendi meu primeiro kit no WhatsApp. Não acreditei quando chegou o dinheiro!"</p>
+        <div class="depo-author">
+          <div class="depo-avatar" style="background:#3DAA6A;">JF</div>
+          <div>
+            <div class="depo-name">Juliana F.</div>
+            <div class="depo-loc">Belo Horizonte, MG</div>
+          </div>
+        </div>
+      </div>
+      <div class="depo-card">
+        <div class="depo-stars">★★★★★</div>
+        <p>"Achei que seria difícil, mas os moldes são tão detalhados que qualquer pessoa faz. Em 30 dias já tinha R$280 de renda extra. Agora é minha principal fonte de renda!"</p>
+        <div class="depo-author">
+          <div class="depo-avatar" style="background:#1A7ABF;">MC</div>
+          <div>
+            <div class="depo-name">Maria C.</div>
+            <div class="depo-loc">São Paulo, SP</div>
+          </div>
+        </div>
+      </div>
+      <div class="depo-card">
+        <div class="depo-stars">★★★★★</div>
+        <p>"A lista dos 50 produtos que mais vendem foi ouro! Focei nos chaveiros juninos e fiz mais de R$500 em junho. Super recomendo pra quem quer renda extra de verdade."</p>
+        <div class="depo-author">
+          <div class="depo-avatar" style="background:#BA7517;">RA</div>
+          <div>
+            <div class="depo-name">Renata A.</div>
+            <div class="depo-loc">Fortaleza, CE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ O QUE VOCÊ RECEBE ══ -->
+<section class="section receive-section">
+  <div class="container">
+    <div class="section-center" style="margin-bottom: 36px;">
+      <span class="section-eyebrow">O que você vai encontrar dentro</span>
+      <h2 class="section-title">No <strong>Método Cópia &amp; Venda</strong><br>você vai ter:</h2>
+    </div>
+
+    <div class="receive-main">
+      <div class="receive-header">
+        <div>
+          <h3>Biblioteca completa de +1.900 moldes prontos</h3>
+          <p>Organizados por categoria para você encontrar e produzir na hora certa do ano</p>
+        </div>
+        <div class="receive-count">
+          +1900
+          <small>moldes</small>
+        </div>
+      </div>
+      <div class="receive-cats">
+        <div class="cat-item"><div class="cat-dot">👶</div><span>Infantil</span></div>
+        <div class="cat-item"><div class="cat-dot">🎭</div><span>Personagens</span></div>
+        <div class="cat-item"><div class="cat-dot">🎉</div><span>Datas Comemorativas</span></div>
+        <div class="cat-item"><div class="cat-dot">💍</div><span>Casamento</span></div>
+        <div class="cat-item"><div class="cat-dot">🔑</div><span>Chaveiros</span></div>
+        <div class="cat-item"><div class="cat-dot">🏠</div><span>Decorativos</span></div>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 0;">
+      <div style="background: var(--white); border-radius: var(--radius); padding: 28px 28px;">
+        <div style="font-size:32px; margin-bottom:12px;">🎯</div>
+        <h3 style="font-size:16px; font-weight:700; margin-bottom:8px;">Serve para quem está começando</h3>
+        <p style="font-size:14px; color:var(--muted); line-height:1.6;">Perfeito para quem nunca pegou em feltro e quer começar a gerar renda extra em casa.</p>
+      </div>
+      <div style="background: var(--white); border-radius: var(--radius); padding: 28px 28px;">
+        <div style="font-size:32px; margin-bottom:12px;">📈</div>
+        <h3 style="font-size:16px; font-weight:700; margin-bottom:8px;">Perfeito para quem quer escalar</h3>
+        <p style="font-size:14px; color:var(--muted); line-height:1.6;">Ideal para artesãs que já vendem e querem mais variedade, mais produtos e mais faturamento.</p>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:36px;">
+      <a href="file:///C:/Users/Giacomo/Downloads/feltro-landing-v2_3.html#preco" class="btn-green">QUERO TER ACESSO AOS MOLDES 🔓</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ BÔNUS ══ -->
+<section class="section bonus-section">
+  <div class="container">
+    <div class="section-center" style="margin-bottom: 40px;">
+      <span class="section-eyebrow">Bônus exclusivos</span>
+      <h2 class="section-title" style="color:#fff;">Você leva <strong style="color:#6EE09A;">4 bônus</strong> no valor de R$97 — de graça</h2>
+      <p class="section-desc">Incluídos no seu acesso sem nenhum custo adicional.</p>
+    </div>
+    <div class="bonus-grid">
+      <div class="bonus-card">
+        <span class="bonus-tag">🎁 Bônus 1</span>
+        <h4>Guia: Primeiras vendas em 7 dias</h4>
+        <p>Um roteiro prático para sair do zero e fazer sua primeira venda na primeira semana — mesmo sem seguidores.</p>
+      </div>
+      <div class="bonus-card">
+        <span class="bonus-tag">🎁 Bônus 2</span>
+        <h4>Lista: 50 produtos que mais vendem</h4>
+        <p>Lista curada dos produtos em feltro com maior saída no mercado agora, separados por nicho e data.</p>
+      </div>
+      <div class="bonus-card">
+        <span class="bonus-tag">🎁 Bônus 3</span>
+        <h4>Estratégia simples de precificação</h4>
+        <p>Descubra como cobrar o valor certo e ter lucro de verdade — sem vender barato e nem afastar o cliente.</p>
+      </div>
+      <div class="bonus-card">
+        <span class="bonus-tag">🎁 Bônus 4</span>
+        <h4>Ideias de kits lucrativos</h4>
+        <p>Monte kits temáticos que vendem mais e permitem cobrar um preço maior com menos esforço de produção.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ DEPOIMENTOS 2 ══ -->
+<section class="section" style="background: var(--bg);">
+  <div class="container">
+    <div style="background: var(--white); border-radius: var(--radius); padding: 36px 40px; display: flex; align-items: flex-start; gap: 28px; margin-bottom: 16px;">
+      <div class="depo-avatar" style="background: #3DAA6A; width:56px; height:56px; font-size:18px; flex-shrink:0;">CS</div>
+      <div>
+        <div class="depo-stars">★★★★★</div>
+        <p style="font-size:16px; font-style:italic; color:var(--dark); line-height:1.7; margin-bottom:12px;">"Comprei achando que não ia usar, mas quando vi os moldes organizados fiquei impressionada. Hoje já vendo kits de páscoa, festa junina e natal. Em 3 meses já paguei o valor do método umas 20 vezes."</p>
+        <div class="depo-name">Cássia S. — Recife, PE</div>
+      </div>
+    </div>
+    <div style="background: var(--white); border-radius: var(--radius); padding: 36px 40px; display: flex; align-items: flex-start; gap: 28px;">
+      <div class="depo-avatar" style="background: #1A7ABF; width:56px; height:56px; font-size:18px; flex-shrink:0;">LG</div>
+      <div>
+        <div class="depo-stars">★★★★★</div>
+        <p style="font-size:16px; font-style:italic; color:var(--dark); line-height:1.7; margin-bottom:12px;">"Sou dona de casa e ficava sem renda própria. Com os moldes comecei a fazer peças decorativas e vender nas feiras do bairro. Meu marido ficou surpreso quando mostrei que tinha faturado R$640 no primeiro mês."</p>
+        <div class="depo-name">Luciana G. — Porto Alegre, RS</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ STACK DE VALOR ══ -->
+<section class="section stack-section">
+  <div class="container section-center" style="margin-bottom:36px;">
+    <span class="section-eyebrow">Veja tudo que você vai levar</span>
+    <h2 class="section-title">O valor total deveria ser <strong>muito mais</strong></h2>
+  </div>
+
+  <div class="stack-box">
+    <div class="stack-row">
+      <div class="name"><span>📁</span> Biblioteca +1.900 moldes</div>
+      <div class="val">R$ 47,00</div>
+    </div>
+    <div class="stack-row">
+      <div class="name"><span>🎁</span> Guia: Primeiras vendas em 7 dias</div>
+      <div class="val">R$ 17,00</div>
+    </div>
+    <div class="stack-row">
+      <div class="name"><span>📋</span> Lista: 50 produtos mais vendidos</div>
+      <div class="val">R$ 17,00</div>
+    </div>
+    <div class="stack-row">
+      <div class="name"><span>💲</span> Estratégia de precificação</div>
+      <div class="val">R$ 9,00</div>
+    </div>
+    <div class="stack-row">
+      <div class="name"><span>🎨</span> Ideias de kits lucrativos</div>
+      <div class="val">R$ 7,00</div>
+    </div>
+  </div>
+
+  <div class="stack-total">
+    <div class="stack-total-left">
+      <p>No total tudo isso deveria custar</p>
+      <div class="strike">R$ 97,00</div>
+    </div>
+    <div class="stack-total-right">
+      <p>Hoje você paga apenas</p>
+      <div class="real-price">R$ 16</div>
+    </div>
+  </div>
+
+  <div style="text-align:center; margin-top:32px;">
+    <p style="font-size:15px; color:var(--muted); max-width:560px; margin: 0 auto 24px;">Esse seria o valor total de cada item vendido separadamente. Mas hoje eu quero firmar um compromisso com você: provar que sim, é possível ter renda extra com feltro mesmo começando do zero.</p>
+  </div>
+</section>
+
+<!-- ══ PREÇO ══ -->
+<section class="section price-section" id="preco">
+  <div class="container section-center" style="margin-bottom:36px;">
+    <span class="section-eyebrow">Acesso completo</span>
+    <h2 class="section-title">Tudo isso por <strong>apenas R$16</strong></h2>
+    <p class="section-desc">Paga uma vez. Tem para sempre.</p>
+  </div>
+
+  <div class="price-card">
+    <div class="price-card-top">
+      <h3>Método Cópia &amp; Venda em Feltro™</h3>
+      <p class="price-from">De R$ 97,00</p>
+      <div class="price-main">
+        <span class="price-rs">R$</span>
+        <span class="price-num">16</span>
+      </div>
+      <span class="price-economy">✅ Você economiza R$ 81,00 agora</span>
+    </div>
+    <div class="price-card-body">
+      <div class="urgency-row">
+        <div class="urgency-dot"></div>
+        <span>Último lote promocional — o valor pode subir a qualquer momento sem aviso.</span>
+      </div>
+      <div class="price-includes">
+        <div class="pi-row"><div class="pi-check">✔</div> +1.900 moldes prontos organizados</div>
+        <div class="pi-row"><div class="pi-check">✔</div> Método Cópia &amp; Venda em Feltro™</div>
+        <div class="pi-row"><div class="pi-check">✔</div> Guia: primeiras vendas em 7 dias</div>
+        <div class="pi-row"><div class="pi-check">✔</div> Lista: 50 produtos mais vendidos</div>
+        <div class="pi-row"><div class="pi-check">✔</div> Estratégia de precificação</div>
+        <div class="pi-row"><div class="pi-check">✔</div> Ideias de kits lucrativos</div>
+        <div class="pi-row"><div class="pi-check">✔</div> Acesso vitalício</div>
+        <div class="pi-row"><div class="pi-check">✔</div> Grupo exclusivo de suporte</div>
+      </div>
+      <a href="https://pagamento.institudoproativos.com.br/checkout/209928278:1" class="btn-green" style="width:100%; text-align:center; display:block; padding:20px; font-size:15px;" target="_blank">
+        QUERO TER ACESSO AOS MOLDES 🔓
+      </a>
+      <p class="price-trust">🔒 Pix, Cartão ou Boleto &nbsp;·&nbsp; Acesso imediato &nbsp;·&nbsp; Garantia de 90 dias</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ GARANTIA ══ -->
+<section class="section garantia-section">
+  <div class="container section-center" style="margin-bottom:36px;">
+    <span class="section-eyebrow">Sem risco para você</span>
+    <h2 class="section-title"><strong>90 dias</strong> de garantia incondicional</h2>
+  </div>
+  <div class="garantia-box">
+    <div class="garantia-badge">🛡️</div>
+    <div>
+      <h3>Nosso compromisso com você</h3>
+      <p>Você tem <strong>90 dias completos</strong> para acessar todos os moldes, aplicar o método e ver os resultados. Se por qualquer motivo você não ficar satisfeita, devolvemos <strong>100% do seu dinheiro</strong> — sem burocracia, sem perguntas, sem complicação. O risco é nosso, não seu. Preto no branco.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FAQ ══ -->
+<section class="section faq-section">
+  <div class="container section-center" style="margin-bottom:36px;">
+    <span class="section-eyebrow">Dúvidas frequentes</span>
+    <h2 class="section-title">Perguntas <strong>frequentes</strong></h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-q" onclick="faq(this)">Por quanto tempo terei acesso?<span class="faq-arrow">+</span></button>
+      <div class="faq-a">Acesso vitalício! Você paga uma única vez e tem os moldes para sempre — incluindo todas as atualizações futuras que forem adicionadas.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="faq(this)">Preciso ter experiência com artesanato?<span class="faq-arrow">+</span></button>
+      <div class="faq-a">Não! O método foi criado para quem nunca pegou em feltro na vida. Os moldes são prontos e detalhados. Qualquer pessoa consegue seguir.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="faq(this)">Como vou receber os moldes?<span class="faq-arrow">+</span></button>
+      <div class="faq-a">Imediatamente após o pagamento você recebe o acesso por e-mail. Tudo digital e na hora. Sem esperar entrega física.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="faq(this)">Como posso tirar dúvidas?<span class="faq-arrow">+</span></button>
+      <div class="faq-a">Você terá acesso ao nosso grupo exclusivo de suporte onde pode tirar dúvidas, compartilhar seus resultados e aprender com outras pessoas que também estão vendendo.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="faq(this)">Qual a diferença desse método para outros tutoriais de feltro?<span class="faq-arrow">+</span></button>
+      <div class="faq-a">A diferença é que aqui você não aprende a "criar" — você copia moldes que já vendem. O foco é resultado e renda, não criatividade. São +1.900 moldes já testados e com demanda real no mercado.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER CTA ══ -->
+<section class="footer-cta">
+  <div class="container">
+    <h2>Comece hoje a transformar feltro em renda extra</h2>
+    <p>+1.900 moldes prontos, método comprovado e 90 dias de garantia. Por apenas R$16.</p>
+    <a href="file:///C:/Users/Giacomo/Downloads/feltro-landing-v2_3.html#preco" class="btn-green" style="font-size: 15px; padding: 20px 48px;">
+      ACESSAR OS MOLDES POR R$16 🔓
+    </a>
+    <div class="footer-trust">
+      <span>🔒 Pagamento 100% seguro</span>
+      <span>⚡ Acesso imediato</span>
+      <span>🛡️ Garantia de 90 dias</span>
+      <span>♾️ Acesso vitalício</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══ RODAPÉ ══ -->
+<footer class="rodape">
+  <div class="rodape-inner">
+    <div class="rodape-brand">
+      <div class="logo-text">🧵 Método Cópia &amp; Venda em Feltro™</div>
+      <p>© 2025 — Todos os direitos reservados.</p>
+      <p style="margin-top:4px; font-size:12px; color:#444;">Os resultados podem variar. Os depoimentos são de clientes reais.</p>
+    </div>
+    <div class="rodape-contact">
+      <p>Tem alguma dúvida?</p>
+      <p style="margin-bottom:12px;">✉️ suporte@metodocopia.com.br</p>
+      <a href="file:///C:/Users/Giacomo/Downloads/feltro-landing-v2_3.html#">FALAR NO WHATSAPP</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+function faq(btn) {
+  const a = btn.nextElementSibling;
+  const open = a.classList.contains('open');
+  document.querySelectorAll('.faq-a').forEach(x => x.classList.remove('open'));
+  document.querySelectorAll('.faq-q').forEach(x => x.classList.remove('active'));
+  if (!open) { a.classList.add('open'); btn.classList.add('active'); }
+}
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const t = document.querySelector(a.getAttribute('href'));
+    if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); }
+  });
+});
+</script>
+
+
+</body></html>
